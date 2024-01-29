@@ -1,0 +1,90 @@
+.loginBox,
+.SignBox {
+  background-color: #000000;
+  margin: 100px;
+  width: 400px;
+  height: 400px;
+  color: rgb(199, 185, 185);
+  border-radius: 10px;
+}
+.SignBox {
+  height: 500px;
+}
+
+.loghead {
+  text-align: center;
+  padding-top: 18px;
+}
+.formtype {
+  margin: 50px;
+}
+.attuid,
+.password,
+.nameclass,
+.roleclass {
+  margin: 10px;
+  border: 20px;
+  display: flex;
+  justify-content: center;
+}
+.attdiv,
+.pwdiv,
+.pw1 {
+  padding-top: 1px;
+}
+
+.personImage,
+.pwImage {
+  width: 33px;
+  height: 32px;
+  background-color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+.incHeight,
+.email1 {
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+.loginsubmit,
+.signsubmit {
+  margin-left: 100px;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  padding-bottom: 25px;
+  cursor: pointer;
+  background-color: rgba(21, 131, 253, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+.loginsubmit:hover {
+  background-color: rgba(21, 131, 253, 1);
+}
+.signsubmit:hover {
+  background-color: rgba(21, 131, 253, 1);
+}
+.signsubmit {
+  margin-top: 25px;
+}
+.mainBox {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.loginImage {
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+}
+body {
+  background-color: #191b1f;
+}
+#signupheading {
+  padding-left: 70px;
+}
+#loginheading {
+  padding-left: 70px;
+}

@@ -1,0 +1,251 @@
+.buttondiv {
+  display: flex;
+  justify-content: left;
+  padding-top: 15%;
+}
+.activityContent {
+  height: 475px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.ContentDiv {
+  overflow-y: auto;
+  position: relative;
+  overflow-x: hidden;
+  border: 1.5px solid #707070;
+  padding: 15px;
+  min-height: 480px;
+}
+
+.activityDiv {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #707070;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 4px;
+  padding: 25px 0px;
+}
+
+.activityInnerDiv {
+  display: flex;
+}
+.OwnerInfo {
+  margin-left: 12px;
+}
+
+.OwnerName,
+.AddActivityHeADING {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.activityOwner {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.ActivityText {
+  margin-left: 12px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.addActivity {
+  color: white;
+  background-color: #1583fd;
+  border-color: #1583fd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.NewActivityDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0px;
+  display: none;
+}
+
+.teamMemberIcon {
+  border-radius: 50%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-color: #707070;
+  justify-content: center;
+  align-items: center;
+}
+
+.removeActivityImg {
+  height: 25px;
+  width: 25px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.removeActivity {
+  margin-right: 6%;
+}
+
+.addActivityDiv {
+  display: flex;
+  width: fit-content;
+  position: sticky;
+  bottom: 10px;
+  left: calc(100% - 10px);
+  justify-content: right;
+  flex-direction: row;
+}
+.activityDetails {
+  border: 1px solid black;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #4b505c;
+}
+
+.inputActivityOwner {
+  width: 47%;
+  height: 2%;
+  background-color: rgb(87, 94, 101);
+  border-color: #4e525c;
+  border-top: #4e525c;
+  border-left: #4e525c;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 8%;
+}
+
+.inputActivity {
+  margin-left: 12px;
+  margin-top: 10px;
+  resize: none;
+  background-color: rgb(87, 94, 101);
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.inputActivity::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1; /* Firefox */
+}
+
+.otherButton,
+.cancelButton {
+  padding: 8px 18px;
+  border-radius: 10px;
+  background-color: #1583fd;
+  color: white;
+  margin-left: 12px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: black;
+  border: 1.5px solid #707070;
+}
+
+.redFlag1,
+.redFlag2 {
+  display: none;
+  margin-left: 10px;
+  font-size: 12px;
+  color: red;
+}
+.buttonClass {
+  display: flex;
+}
+
+.button1 {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 14px 45px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: not-allowed;
+  border-top-right-radius: 14px;
+  border: 1.5px solid #707070;
+}
+.button {
+
+  padding: 14px 45px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-top-right-radius: 14px;
+  border: 1.5px solid #707070;
+}
+
+.buttonBlack {
+  background-color: #25303A;
+  color: #F2FAFD;
+}
+
+.buttonBlue {
+  background-color: #0057B8;
+  color: rgba(255, 255, 255, 0.8);
+  /* border-bottom: 3px solid red; */
+}
+
+.dummy {
+  width: 1000px;
+  height: 500px;
+  background-color: #000000;
+}
+
+.text {
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  left: 22%;
+  top: 45%;
+  width: 50%;
+  font-size: 30px;
+  z-index: 2;
+}
+
+.mobileView {
+  display: none;
+}
+.HorizontalDivider {
+  width: 1.5px;
+  height: 550px;
+  margin: 0px 2.2vw;
+  background-color: #707070;
+  border-radius: 10px;
+}
+/* @media only screen and(max-width:400px){
+  .activityContent{
+    width:90%;
+  }
+  
+} */
+
+@media screen and (max-width: 420px) {
+  .button,
+  .button1 {
+    padding: 14px 20px;
+  }
+}
+@media screen and (max-width: 780px) and (min-width: 420px) {
+  .button {
+    padding: 14px 30px;
+  }
+  @media screen and (max-width: 980px) and(min-width:780px) {
+    .button {
+      padding: 14px 10px;
+    }
+  }
+}

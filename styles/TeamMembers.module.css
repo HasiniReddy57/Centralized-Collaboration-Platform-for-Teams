@@ -1,0 +1,259 @@
+.search {
+  background-color: #25303A;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 350px;
+  overflow-y: auto;
+  height: fit-content;
+  max-height: 475px;
+  position: relative;
+  overflow-x: hidden;
+  margin-right: 25px;
+  padding-bottom: 20px;
+}
+
+.AddSearch {
+  background-color: rgb(87, 94, 101);
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 500px;
+  overflow-y: auto;
+  height: 450px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.incHeight2 {
+  width: 120px;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.header {
+  color: whitesmoke;
+  background-color: #0057B8;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header1 {
+  color: whitesmoke;
+  background-color: #0057B8;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.searchInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchInput input {
+ 
+  width: 60%;
+  border-radius: 10px;
+  padding: 5px 5%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20px 20% 0px 20%;
+}
+
+.userDetail {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userDetail span {
+  font-size: 14px;
+}
+
+.userData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.teamMemberIcon {
+  border-radius: 50%;
+  display: flex;
+  min-width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  margin-left: 20px;
+  background-color: #25303A;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamMemberIcon1 {
+  border-radius: 50%;
+  display: flex;
+  min-width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background-color: #707070;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.displayTeam {
+  margin-top: 15px;
+}
+
+.addBtn {
+  border-radius: 8px;
+  border: 0px;
+  padding: 5px 10px;
+  height: fit-content;
+  background-color: #0057B8;
+  cursor: pointer;
+  color: #F2FAFD;
+}
+
+.MemberRoleClass {
+  margin: 0px 20%;
+  /* border: 20px; */
+  width:50%;
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items:center;
+  display: none;
+  background-color: #25303A;
+  border-radius: 10px;
+  padding: 2% 5%;
+  /* border: 1.5px solid white; */
+}
+
+.dataResult {
+  margin: 0px 20%;
+  width: 60%;
+  box-sizing: border-box; 
+  border-radius: 10px;
+  padding: 5px 5%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  max-height: 150px;
+  overflow: auto;
+  position: absolute;
+  background-color: #25303A;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #F2FAFD;
+}
+
+.teamMember1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #F2FAFD;
+}
+
+.teamMemberDetails {
+  width: 50%;
+  margin: 0px 5px;
+}
+
+.teamMemberDetails1 {
+  width: 50%;
+}
+
+.teamMemberName {
+  font-size: 16px;
+  font-weight: 600;
+}
+.attuidText {
+  font-weight: 500;
+}
+
+.teamMemberAttuid {
+  font-size: 13px;
+}
+.teamMemberRoleIcon {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color:#0057B8;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.teamPOCRoleIcon {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+}
+.teamMemberRole {
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.horizontalLine {
+  width: 100%;
+  border: 1px solid #707070;
+  margin: 15px 0px;
+}
+
+.searchInputField::placeholder {
+  color: black;
+  opacity: 1;
+}
+.searchInputField {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  font-size: 13px;
+  outline: none;
+  border: none;
+  text-align: left;
+}
+@media screen and (max-width: 420px) {
+  .search {
+    width: 380px;
+    margin: 5px;
+  }
+  .AddSearch{
+    width:350px;
+    margin:20px;
+  }
+  .userDetail{
+    display:flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:980px ) and (min-width:420px){
+  .search{
+    float:none;
+    width:500px;
+    margin-left:20px;
+  }
+}

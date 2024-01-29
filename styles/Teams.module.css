@@ -1,0 +1,225 @@
+.MainDiv {
+  padding-top: 10px;
+  margin: 0;
+}
+.SearchDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.SearchInput {
+  text-align: left;
+  justify-content: center;
+  justify-content: center;
+  padding: 8px 10px;
+  width: 25%;
+  width: 25%;
+  border: 1.5px solid #707070;
+  outline: none;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-size: medium;
+}
+
+.TeamsDiv {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  gap: 5vw;
+  width: 90vw;
+  flex-wrap: wrap;
+}
+
+/* .Team:hover {
+  transform: scale(1.05);
+} */
+
+.FullTeamDiv:hover {
+  transform: scale(1.05);
+}
+
+.FullTeamDiv {
+  border: 1.5px solid #707070;
+  width: 26vw;
+  border-radius: 10px;
+  /* border-top-right-radius: 10px;
+  border-top-left-radius: 10px; */
+}
+
+.DeleteButtonDiv{
+  /* border: 1.5px solid #707070; */
+  width: 26vw;
+  height: 50px;
+  /* border-radius: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #F2FAFD;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.DeleteButtonTeam {
+  /* border-radius: 10px; */
+  /* color: #F2FAFD; */
+  border: 0px;
+  background-color: #F2FAFD;
+  /* height: 40px;
+  width: 40px; */
+  padding: 8px;
+  /* margin-top: 4px;
+  margin-bottom: 40px; */
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+}
+
+/* .DeleteButtonTeam:hover{
+transform: scale(1.05);
+} */
+
+.AddTeamDiv {
+  /* border: 1.5px solid #707070; */
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background-color: black;
+  border-radius: 10px;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
+.TopDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 10px 15px;
+  border-bottom: 1px solid #707070;
+  height: 35px;
+  background-color: #0057B8;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.teamName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #dcdbdb;
+}
+
+.BottomDiv {
+  padding: 15px;
+  height: 125px;
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+  background-color: #F2FAFD;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.BottomDivAdmin {
+  padding: 15px;
+  height: 125px;
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+  background-color: #F2FAFD;
+}
+
+
+.MidDiv {
+  border-bottom: 1px solid #707070;
+  padding: 15px;
+  height: 30px;
+  color: black;
+  background-color: #F2FAFD;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teamCount span {
+  color: #F2FAFD;
+}
+
+.ArrowImg {
+  height: 35px;
+}
+
+.teamCount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.teamCountImg {
+  height: 30px;
+}
+
+.AddTeamButton {
+  background-color: #F2FAFD;
+  border: 1.5px solid #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.AddTeamImage {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.DeleteButton:hover {
+  transform: scale(1.05);
+}
+
+.removeActivityImg {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .FullTeamDiv,
+  .DeleteButtonDiv {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .FullTeamDiv,
+  .DeleteButtonDiv {
+    width: 70vw;
+    /* margin:20px 10VW; */
+    margin-bottom: 20px;
+  }
+
+  .TeamsDiv {
+    width: 90vw;
+    margin: 0px 5vw;
+    margin-top: 20px;
+    gap: 0;
+  }
+  .TeamsDiv {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  .FullTeamDiv,
+  .DeleteButtonDiv,
+  .TeamsDiv {
+    margin-left: 10px;
+  }
+}

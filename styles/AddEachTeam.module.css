@@ -1,0 +1,232 @@
+.MainDiv {
+  padding: 12px 30px;
+}
+
+.IntroDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TeamName,
+.Department {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.para {
+  margin: 0px 8px;
+}
+
+.OverViewDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-top: 15px;
+}
+
+.border {
+  border: 1px solid #707070;
+  width: 99%;
+  padding: 0;
+  margin: auto;
+}
+
+.ActivityBox {
+  width: 1000px;
+  height: 500px;
+  cursor: not-allowed;
+  margin-left: 40px;
+}
+
+.BottomBox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.AddBottomBox {
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.InputTeamName,
+.InputTeamDept {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  height: 25px;
+  font-size: 13px;
+  background-color: rgb(87, 94, 101);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.InputTeamName::placeholder,
+.InputTeamDept::placeholder,
+.InputTeamOverview::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.InputTeamOverview {
+  color: white;
+  padding: 3px;
+  margin: 0px 38px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  font-size: 13px;
+  resize: none;
+  background-color: rgb(87, 94, 101);
+  outline: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.submitDataDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1%;
+  margin-right: 1.5%;
+  margin-bottom: 2%;
+}
+
+.submitDataButton {
+  color: #cdced5;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0px 0px 2px black;
+  cursor: pointer;
+  margin: 0px 10px;
+  font-weight: 600;
+  background-color: #0057B8;
+}
+
+.HorizontalDivider {
+  width: 1.5px;
+  height: 550px;
+  background-color: #707070;
+  border-radius: 10px;
+}
+
+.HorizontalDivider1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 1.5px;
+  height: 350px;
+  background-color: #707070;
+  border-radius: 10px;
+}
+
+.teamIdMobileView {
+  display: none;
+}
+.buttonClassMobile {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+.button {
+  cursor: pointer;
+  color: #cdced5;
+  padding: 5px 10px;
+}
+.buttonNotActive {
+  background-color: #191b1f;
+}
+.buttonActive {
+  /* border-bottom: 3px solid red; */
+  background-color: #0057B8;
+}
+
+@media screen and (max-width: 420px) {
+  .BottomBox {
+    display: none;
+  }
+  .teamIdMobileView {
+    display: block;
+  }
+  .IntroDiv {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .InputTeamName,
+  .InputTeamDept,
+  .InputTeamOverview {
+    width: 150px;
+  }
+  .InputTeamOverview {
+    margin-left: 30px;
+  }
+  .AddBottomBox {
+    flex-direction: column;
+  }
+  .HorizontalDivider1 {
+    display: none;
+  }
+  .AddTeamMembers {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 770px) and (min-width: 460px) {
+  .InputTeamName,
+  .InputTeamDept {
+    width: 150px;
+  }
+  .InputTeamOverview {
+    width: 250px;
+    height: 25px;
+  }
+  .ActivityBox,
+  .HorizontalDivider {
+    display: none;
+  }
+  .BottomBox {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 980px) and (min-width: 420px) {
+  .BottomBox,
+  .AddBottomBox {
+    flex-direction: column;
+  }
+  .ActivityBox {
+    display: none;
+  }
+  .HorizontalDivider,
+  .HorizontalDivider1 {
+    display: none;
+  }
+  .AddTeamMembers {
+    margin-left: 150px;
+  }
+  .InputTeamDept,
+  .InputTeamName {
+    width: 100px;
+  }
+  .InputTeamName,
+  .InputTeamDept {
+    width: 200px;
+  }
+  .InputTeamOverview {
+    width: 250px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,272 @@
+.buttondiv {
+  display: flex;
+  justify-content: left;
+  padding-top: 15%;
+}
+.activityContent {
+  height: 550px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.ContentDiv {
+  overflow-y: auto;
+  position: relative;
+  overflow-x: hidden;
+  border: 1.5px solid #707070;
+  padding: 15px;
+  height: 550px;
+  min-height: 200px;
+}
+
+.activityDiv {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #707070;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 4px;
+  padding: 25px 0px;
+}
+
+.activityInnerDiv {
+  display: flex;
+}
+
+.ActivityOuterDiv {
+  border-bottom: 1.5px solid #707070;
+}
+.OwnerInfo {
+  margin-left: 12px;
+}
+
+.OwnerName,
+.AddActivityHeADING {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.activityOwner {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.ActivityText {
+  margin-left: 12px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.addActivity {
+  color: white;
+  background-color: #1583fd;
+  border-color: #1583fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.NewActivityDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0px;
+  display: none;
+}
+
+.teamMemberIcon {
+  border-radius: 50%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-color: #707070;
+  justify-content: center;
+  align-items: center;
+}
+
+.removeActivityImg,
+.CommentImg {
+  height: 25px;
+  width: 25px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.editActivity{
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.ImagesDiv {
+  margin-right: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.addActivityDiv {
+  display: flex;
+  width: fit-content;
+  position: sticky;
+  bottom: 10px;
+  left: calc(100% - 10px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.activityDetails {
+  border: 1px solid black;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #4b505c;
+}
+
+.inputActivityOwner {
+  width: 47%;
+  height: 2%;
+  background-color: rgb(87, 94, 101);
+  border-color: #4e525c;
+  border-top: #4e525c;
+  border-left: #4e525c;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 8%;
+}
+
+.inputActivity {
+  margin-left: 12px;
+  margin-top: 10px;
+  resize: none;
+  background-color: rgb(87, 94, 101);
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.inputActivity::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+.otherButton,
+.cancelButton {
+  padding: 8px 18px;
+  border-radius: 10px;
+  background-color: #1583fd;
+  color: white;
+  margin-left: 12px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: black;
+  border: 1.5px solid #707070;
+}
+
+.redFlag1,
+.redFlag2 {
+  display: none;
+  margin-left: 10px;
+  font-size: 12px;
+  color: red;
+}
+.buttonClass {
+  display: flex;
+}
+.button {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 14px 45px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-top-right-radius: 14px;
+  border: 1.5px solid #707070;
+}
+
+.buttonBlack {
+  background-color: #000000;
+}
+
+.buttonBlue {
+  background-color: rgba(21, 131, 253, 0.8);
+}
+
+.commentdiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.commentDivOuter {
+  margin: 20px 0 20px 10%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #707070;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.NewCommentDiv {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 20px 10%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #707070;
+  display: none;
+}
+
+.editTextDiv {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 20px 5%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #707070;
+  display: none;
+}
+.editCommentTextDiv {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 20px 13%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #707070;
+  display: none;
+}
+
+.comment {
+  display: none;
+  position: relative;
+  top: 20px;
+  font-size: 12px;
+  background-color: #1583fd;
+  opacity: 0.8;
+  padding: 2px;
+}
+
+@media screen and (max-width: 780px) and (min-width: 620px) {
+  .ContentDiv {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 620px) and (min-width: 480px) {
+  .ContentDiv {
+    width: 400px;
+  }
+}

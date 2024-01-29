@@ -1,0 +1,161 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BAEEFC;
+  position: relative;
+  z-index: 11;
+  height: 60px;
+  color: black;
+
+}
+
+
+
+.personImg{
+  border-radius: 50%;
+  transform: scale(0.75);
+  margin-right: 0;
+}
+
+
+
+.border {
+  border: 1px solid #707070;
+  width: 99%;
+  padding: 0;
+  margin: auto;
+}
+
+.containerLogo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1vw;
+  color: black;
+  min-width: 200px;
+  float: left;
+  margin-left: 30px;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+  min-width: 100px;
+  align-items: center;
+}
+
+.loginProfile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  color: #F2FAFD;
+  padding: 8px 22px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  /* box-shadow: 0px 0px 2px black; */
+  cursor: pointer;
+  margin: 0px 10px;
+  font-weight: 600;
+}
+.buttonBlack {
+  /* background-color: #000000; */
+  background-color: #0057B8;
+  /* border: 1.5px solid #707070; */
+}
+
+.buttonBlue {
+  background-color: #0057B8;
+}
+
+.MenuDiv {
+  display: none;
+  width: fit-content;
+}
+
+.MenuIcon {
+  color: #F2FAFD;
+}
+
+.MenuItem {
+  margin: 0px;
+  padding: 10px 0px;
+  border-bottom: 1.5px solid #707070;
+  text-align: center;
+}
+
+.MenuOpen {
+  transform: translateY(5px);
+}
+
+.MenuClose {
+  transform: translateY(-200px);
+}
+
+.MenuBox {
+  position: fixed;
+  top: 76px;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  animation: movedown 0.9s 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 6px -5px,
+    rgba(0, 0, 0, 0.3) 0px 4px 3px -5px;
+  background-color: #191b1f;
+}
+
+.MenuBoxIntial {
+  display: none;
+}
+
+@keyframes movedown {
+  from {
+    transform: translateY(-400px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes moveup {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-400px);
+  }
+}
+
+.MenuClose {
+  animation: moveup 1.2s 1;
+}
+
+@media screen and (max-width: 458px) {
+  .MenuDiv {
+    display: block;
+  }
+
+  .containerButton {
+    display: none;
+  }
+
+  .container {
+    height: 76px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .MenuBox {
+    display: none;
+  }
+}
+
+/* Desktop-  1920 1680 1440 1366 1080  */
+/* Mobile - 768 540 400 */
