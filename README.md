@@ -78,9 +78,9 @@ You can modify the API endpoint by editing pages/api/hello.js.
 ## Learn More
 To dive deeper into Next.js, explore the following resources:
 
-Next.js Documentation - Learn about Next.js features and API.
-Learn Next.js - An interactive tutorial on Next.js.
-Next.js GitHub Repository - Your feedback and contributions are welcome!
+- Next.js Documentation - Learn about Next.js features and API.
+- Learn Next.js - An interactive tutorial on Next.js.
+- Next.js GitHub Repository - Your feedback and contributions are welcome!
 
 ## Deployment
 The easiest way to deploy your Next.js app is to use the Vercel Platform, created by the makers of Next.js. Refer to the Next.js deployment documentation for detailed instructions.
