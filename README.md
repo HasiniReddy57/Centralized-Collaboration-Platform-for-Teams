@@ -146,7 +146,14 @@ You can modify the API endpoint by editing `pages/api/hello.js`.
 The easiest way to deploy your Next.js app is to use the Vercel Platform, created by the makers of Next.js. Refer to the [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for detailed instructions.
 
 ## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+Contributions are welcome! Please follow these steps:
+
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add your feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
+
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE]() file for details.
