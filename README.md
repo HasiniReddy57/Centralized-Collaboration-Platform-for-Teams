@@ -48,27 +48,86 @@ To run the development server, follow these steps:
 ## Project Structure 
 ```ruby
 Centralized-Collaboration-Platform-for-Teams/
-├── components/          # Reusable React components
-├── pages/               # Application pages
-├── public/              # Static assets
-├── styles/              # CSS styles
-├── db.json              # Sample database (JSON format)
-├── jsconfig.json        # JavaScript configuration
-├── next.config.js       # Next.js configuration
-├── package.json         # Project metadata and dependencies
-└── README.md            # Project documentation
+.
+├── components
+│   ├── mainBox
+│   │   ├── Activities.js
+│   │   ├── Discussion.js
+│   │   ├── Ideas.js
+│   │   ├── Issues.js
+│   │   ├── activityItem.js
+│   │   ├── AddTeamMembers.js
+│   │   ├── MainBox.js
+│   │   ├── Modal.js
+│   │   ├── NavBar.js
+│   │   └── TeamMembers.js
+├── pages
+│   ├── api
+│   │   └── teams
+│   │       ├── index.js
+│   │       ├── info.js
+│   │       ├── isAuthenticate.js
+│   │       └── login.js
+│   │       └── logout.js
+│   │       └── signup.js
+│   ├── 404.js
+│   ├── [id].js
+│   ├── _app.js
+│   ├── _document.js
+│   ├── createteam.js
+│   ├── index.js
+│   ├── login.js
+│   └── signup.js
+├── public
+│   ├── images
+│   │   ├── AddTeam.svg
+│   │   ├── Arrow.svg
+│   │   ├── Logo.svg
+│   │   ├── Menu.svg
+│   │   ├── TeamCount.svg
+│   │   ├── add.svg
+│   │   ├── comment.svg
+│   │   ├── delete.svg
+│   │   ├── editt.svg
+│   │   ├── info.svg
+│   │   ├── key.svg
+│   │   ├── login.svg
+│   │   ├── person.svg
+│   │   ├── personP.png
+│   │   ├── profile.svg
+│   │   ├── search.svg
+│   │   ├── signup.svg
+│   │   └── favicon.ico
+├── styles
+│   ├── Activities.module.css
+│   ├── AddEachTeam.module.css
+│   ├── AddTeamMembers.module.css
+│   ├── EachTeam.module.css
+│   ├── Modal.module.css
+│   ├── NavBar.module.css
+│   ├── TeamMembers.module.css
+│   ├── Teams.module.css
+│   ├── globals.css
+│   ├── loginstyle.module.css
+│   └── teampage.module.css
+├── README.md
+├── db.json
+├── jsconfig.json
+├── next.config.js
+├── package-lock.json
+└── package.json
 ```
 ## Usage
 You can start editing the application by modifying files in the pages/ directory. The application supports hot reloading, so changes will be reflected in the browser automatically.
 
 ## API Routes
-API routes can be accessed at:
+**API routes can be accessed at:**
 
 ```bash
 Copy code
 http://localhost:3000/api/hello
 ```
-You can modify the API endpoint by editing pages/api/hello.js.
+You can modify the API endpoint by editing `pages/api/hello.js`.
 
 ## Technologies Used
 - **Next.js**: React framework for server-side rendering and static site generation.
@@ -76,17 +135,18 @@ You can modify the API endpoint by editing pages/api/hello.js.
 - **CSS**: Styling for the application.
 
 ## Learn More
-To dive deeper into Next.js, explore the following resources:
+**To dive deeper into Next.js, explore the following resources:**
 
-- Next.js Documentation - Learn about Next.js features and API.
-- Learn Next.js - An interactive tutorial on Next.js.
-- Next.js GitHub Repository - Your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- Learn [Next.js](https://nextjs.org) - An interactive tutorial on Next.js.
+- [Next.js GitHub Repository](https://github.com/vercel/next.js) - Your feedback and contributions are welcome!
+- Refer to [React Documentation](https://reactjs.org/docs/getting-started.html) for further analysis.
 
 ## Deployment
-The easiest way to deploy your Next.js app is to use the Vercel Platform, created by the makers of Next.js. Refer to the Next.js deployment documentation for detailed instructions.
+The easiest way to deploy your Next.js app is to use the Vercel Platform, created by the makers of Next.js. Refer to the [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for detailed instructions.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE]() file for details.
