@@ -71,9 +71,9 @@ http://localhost:3000/api/hello
 You can modify the API endpoint by editing pages/api/hello.js.
 
 ## Technologies Used
-Next.js: React framework for server-side rendering and static site generation.
-JavaScript: Core programming language.
-CSS: Styling for the application.
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **JavaScript**: Core programming language.
+- **CSS**: Styling for the application.
 Learn More
 To dive deeper into Next.js, explore the following resources:
 
